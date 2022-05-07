@@ -1,0 +1,34 @@
+:root {
+  --boder-radius: .25rem;
+  --boder-radius-large: .5rem;
+  --boder-radius-largest: 1rem;
+  --color-description: #8a94a6;
+  --black-color: #000;
+  --white-color: #fff;
+  --primary-color: #4ba7fe;
+  --primary-color-hover: #2d5f8e;
+  --background-button: #f4541d;
+  --background-navbar: #f3eef2;
+  --background-content: #f7f8f9;
+  --letter-spacing: .25rem;
+  --box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --dot-one: #ff6058;
+  --dot-two: #fdbe2d;
+  --dot-three: #28c940;
+  --color-facebook: #0284fe;
+  --color-youtube: #da2c2c;
+  --color-github: #8a94a6;
+  --color-instagram: #ff867e;
+  --color-gmail: #5bb65b;
+  --color-home: #a953ae;
+  --color-cv: #4ba5cf;
+}
+
+.profile{
+  width: 70vw;
+  margin: 5rem auto;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--boder-radius-largest);
+  overflow: hidden;
+  
+}

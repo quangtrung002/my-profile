@@ -1,0 +1,198 @@
+:root {
+  --boder-radius: .25rem;
+  --boder-radius-large: .5rem;
+  --boder-radius-largest: 1rem;
+  --color-description: #8a94a6;
+  --black-color: #000;
+  --white-color: #fff;
+  --primary-color: #4ba7fe;
+  --primary-color-hover: #2d5f8e;
+  --background-button: #f4541d;
+  --background-navbar: #f3eef2;
+  --background-content: #f7f8f9;
+  --background-cv: #d1e6f1;
+  --letter-spacing: .25rem;
+  --box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --dot-one: #ff6058;
+  --dot-two: #fdbe2d;
+  --dot-three: #28c940;
+  --color-facebook: #0284fe;
+  --color-youtube: #da2c2c;
+  --color-github: #8a94a6;
+  --color-instagram: #ff867e;
+  --color-gmail: #5bb65b;
+  --color-home: #a953ae;
+  --color-cv: #4ba5cf;
+  --color-quote: #cdd4d8;
+}
+
+.container {
+  width: 90%;
+  margin: 1rem auto;
+  background-color: var(--background-content);
+  border-radius: var(--boder-radius-large);
+  user-select: none;
+  padding: 1rem;
+
+  .user {
+    .img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .name {
+      font-size: 1.25rem;
+      font-weight: bolder;
+      color: var(--black-color);
+      text-transform: uppercase;
+      margin: .5rem 0;
+    }
+
+    .major {
+      color: var(--black-color);
+      font-weight: 700;
+      font-size: .8rem;
+      text-transform: uppercase;
+      margin: .25rem 0 .75rem;
+    }
+
+    .quote {
+      color: var(--color-quote);
+      font-size: 2rem;
+    }
+
+    .des::first-letter {
+      text-transform: capitalize;
+    }
+
+    .des {
+      font-size: .8rem;
+      color: var(--black-color);
+      font-weight: 600;
+      line-height: 1.5rem;
+      width: 90%;
+      text-align: left;
+    }
+  }
+
+  .aboutMe {
+    background-color: var(--background-cv);
+    border-radius: var(--boder-radius-large);
+    padding: 1rem 0;
+  }
+
+  .infors {
+    position: relative;
+
+    .icon {
+      position: absolute;
+      left: -1.5rem;
+      background-color: var(--color-cv);
+      display: inline-flex;
+      flex-direction: column;
+      color: var(--white-color);
+      gap: 1.75rem;
+      font-size: 1.15rem;
+      width: 2.75rem;
+      padding: .75rem 0;
+      border-radius: 2rem;
+    }
+
+    .infor {
+      padding: .5rem 2rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+
+      .heading::first-letter {
+        text-transform: capitalize;
+      }
+
+      .heading {
+        color: var(--black-color);
+        font-size: .9rem;
+        font-weight: bolder;
+      }
+
+      .des {
+        color: var(--black-color);
+        font-weight: 500;
+        font-size: .85rem;
+        padding-top: .15rem;
+        text-transform: capitalize;
+      }
+
+      .desEmail {
+        text-transform: lowercase;
+      }
+
+    }
+  }
+
+  .educationSkill {
+
+    .educations,
+    .skills,
+    .cvs {
+      position: relative;
+    }
+
+    .education,
+    .skill,
+    .cv {
+      padding: .5rem 2rem 0;
+    }
+
+    .icon {
+      position: absolute;
+      left: -1.5rem;
+      top: 1rem;
+      background-color: var(--color-cv);
+      color: var(--white-color);
+      font-size: 1.15rem;
+      border-radius: 50%;
+      width: 2.75rem;
+      height: 2.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title {
+      color: var(--black-color);
+      font-size: .9rem;
+      font-weight: bolder;
+      text-transform: uppercase;
+      padding: 1.25rem 0 .75rem;
+    }
+
+    .heading,
+    .des {
+      color: var(--black-color);
+      text-transform: capitalize;
+      font-size: .85rem;
+    }
+
+    .heading {
+      font-weight: 900;
+    }
+
+    .des {
+      font-weight: 500;
+      padding-left: .25rem;
+    }
+
+    .myCV {
+      color: var(--color-facebook);
+      font-size: .9rem;
+
+      &:hover {
+        font-weight: 900;
+      }
+    }
+  }
+
+}

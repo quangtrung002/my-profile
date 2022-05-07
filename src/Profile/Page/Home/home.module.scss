@@ -1,0 +1,20 @@
+
+
+.contact{
+  width: 90%;
+  margin: 1rem auto;
+  background-color: var(--background-content);
+  border-radius: var(--boder-radius-large);
+  user-select: none;
+  .heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--black-color);
+    text-transform: capitalize;
+    padding: 1rem 0;
+  }
+  .form{
+    padding: .5rem 1rem 1rem;
+  }
+}

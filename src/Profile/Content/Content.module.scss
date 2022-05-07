@@ -1,0 +1,139 @@
+.content {
+  width: 90%;
+  margin: .5rem auto;
+  padding: 2rem 0 .5rem;
+  background: var(--background-content);
+  border-radius: var(--boder-radius-large);
+
+  .infor {
+    text-align: center;
+    user-select: none;
+
+    .userImg {
+      width: 10rem;
+      height: 10rem;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .name {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      color: var(--black-color);
+      text-transform: capitalize;
+      margin: .5rem 0;
+    }
+
+    .des {
+      color: var(--black-color);
+      font-weight: 700;
+      font-size: .8rem;
+      text-transform: capitalize;
+      margin: .25rem 0 .75rem;
+    }
+
+    .maxim {
+      color: var(--color-description);
+      width: 35%;
+      line-height: 1rem;
+      margin: 0 auto;
+      font-size: .75rem;
+      font-weight: 900;
+    }
+
+    .author {
+      font-size: .85rem;
+      font-weight: 900;
+      text-transform: capitalize;
+      margin: .25rem 0 .75rem;
+    }
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    .listHome {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1.5px;
+        height: 80%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #ccc;
+        border-radius: 1px;
+        right: -1rem;
+      }
+    }
+
+    .list {
+      display: flex;
+      justify-content: center;
+      gap: .5rem;
+      margin-bottom: 1rem;
+
+      .item {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: var(--boder-radius-large);
+        background-color: var(--background-navbar);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        cursor: pointer;
+        transition: all linear .2s;
+
+        &:hover {
+          transform: scale(1.5);
+          margin: 0 1rem;
+        }
+      }
+
+      .home,
+      .cv,
+      .facebook,
+      .youtube,
+      .gmail,
+      .github,
+      .instagram {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+      }
+
+      .home {
+        color: var(--color-home);
+      }
+
+      .cv {
+        color: var(--color-cv);
+      }
+
+      .facebook {
+        color: var(--color-facebook);
+      }
+
+      .youtube {
+        color: var(--color-youtube);
+      }
+
+      .github {
+        color: var(--color-github);
+      }
+
+      .gmail {
+        color: var(--color-gmail);
+      }
+
+      .instagram {
+        color: var(--color-instagram);
+      }
+    }
+  }
+}
