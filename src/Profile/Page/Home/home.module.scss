@@ -1,30 +1,4 @@
-:root {
-  --boder-radius: .25rem;
-  --boder-radius-large: .5rem;
-  --boder-radius-largest: 1rem;
-  --color-description: #8a94a6;
-  --black-color: #000;
-  --white-color: #fff;
-  --primary-color: #4ba7fe;
-  --primary-color-hover: #2d5f8e;
-  --background-button: #f4541d;
-  --background-navbar: #f3eef2;
-  --background-content: #f7f8f9;
-  --background-cv: #d1e6f1;
-  --letter-spacing: .25rem;
-  --box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  --dot-one: #ff6058;
-  --dot-two: #fdbe2d;
-  --dot-three: #28c940;
-  --color-facebook: #0284fe;
-  --color-youtube: #da2c2c;
-  --color-github: #8a94a6;
-  --color-instagram: #ff867e;
-  --color-gmail: #5bb65b;
-  --color-home: #a953ae;
-  --color-cv: #4ba5cf;
-  --color-quote: #cdd4d8;
-}
+
 
 .contact {
   width: 90%;
@@ -65,6 +39,7 @@
       .note {
         display: flex;
         gap: .5rem;
+        flex-wrap: wrap;
         font-size: .95rem;
         color: var(--black-color);
         font-weight: 900;
@@ -102,6 +77,142 @@
 
       .des {
         color: rgba(0, 0, 0, .6);
+      }
+    }
+  }
+}
+
+
+@media (max-width : 575px) {
+  .contact{
+    .heading{
+      font-size: 1.5rem;
+      padding-bottom: .5rem;
+    }
+    .form {
+      .project {
+        position: relative;
+        padding: 0 0 1rem;
+        &:not(:first-child)::after{
+          content: "";
+          position: absolute;
+          width: 90%;
+          top: -0.5rem;
+          left: 0.15rem;
+          height: 1px;
+          background-color: #ccc;
+        }
+        .img {
+          display: none;
+        }
+  
+        .name,
+        .demo,
+        .descript,
+        .note {
+          font-size: .85rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width : 576px) and (max-width :768px){
+  .contact{
+    .heading{
+      font-size: 1.5rem;
+      padding-bottom: .5rem;
+    }
+    .form {
+      .project {
+        position: relative;
+        padding: 0 0 1rem;
+        &:not(:first-child)::after{
+          content: "";
+          position: absolute;
+          width: 90%;
+          top: -0.5rem;
+          left: 0.15rem;
+          height: 1px;
+          background-color: #ccc;
+        }
+        .img {
+          display: none;
+        }
+  
+        .name,
+        .demo,
+        .descript,
+        .note {
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width : 769px) and (max-width :991px){
+  .contact{
+    .heading{
+      font-size: 1.5rem;
+      padding-bottom: .5rem;
+    }
+    .form {
+      .project {
+        position: relative;
+        padding: 0 0 1rem;
+        &:not(:first-child)::after{
+          content: "";
+          position: absolute;
+          width: 90%;
+          top: -0.5rem;
+          left: 0.15rem;
+          height: 1px;
+          background-color: #ccc;
+        }
+        .img {
+          display: none;
+        }
+  
+        .name,
+        .demo,
+        .descript,
+        .note {
+          font-size: .85rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width : 992px) and (max-width :1113px){
+  .contact{
+    .heading{
+      font-size: 1.5rem;
+      padding-bottom: .5rem;
+    }
+    .form {
+      .project {
+        position: relative;
+        padding: 0 0 1rem;
+        &:not(:first-child)::after{
+          content: "";
+          position: absolute;
+          width: 90%;
+          top: -0.5rem;
+          left: 0.15rem;
+          height: 1px;
+          background-color: #ccc;
+        }
+        .img {
+          display: none;
+        }
+  
+        .name,
+        .demo,
+        .descript,
+        .note {
+          font-size: .85rem;
+        }
       }
     }
   }

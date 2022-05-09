@@ -137,3 +137,64 @@
     }
   }
 }
+
+@media (max-width : 575px) {
+  .content {
+    .infor {
+      .maxim {
+        width: 90%;
+      }
+    }
+
+    .contact {
+      display: grid;
+      gap: .25rem;
+
+      .listHome {
+        margin-bottom: 0;
+        &::after{
+          content: "";
+          position: absolute;
+          display: none;
+        }
+      }
+
+      .list {
+        margin-bottom: .5rem;
+        .item {
+          width: 2.2rem;
+          height: 2.2rem;
+        }
+
+        .home,
+        .cv,
+        .facebook,
+        .youtube,
+        .gmail,
+        .github,
+        .instagram {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width : 576px) and (max-width :767px){
+  .content {
+    .infor {
+      .maxim {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (min-width : 768px) and (max-width :991px){
+  .content {
+    .infor {
+      .maxim {
+        width: 60%;
+      }
+    }
+  }
+}

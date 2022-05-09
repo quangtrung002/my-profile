@@ -1,5 +1,7 @@
 import './App.css';
-import "./Responsive.css"
+import "./library.css"
+import "./responsive.css"
+
 import Profile from './Profile/Profile';
 
 function App() {
