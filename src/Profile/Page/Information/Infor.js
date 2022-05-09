@@ -11,7 +11,7 @@ function Infor() {
       <div className={clsx("grid")}>
         <div className={clsx('row')}>
           <div className={clsx('col', 'l-7', 'c-12','m-6', style.user)}>
-            <img src={process.env.PUBLIC_URL + '/logo/user.jpg'} className={clsx(style.img)} />
+            <img src={process.env.PUBLIC_URL + "/logo/user.jpg"} className={clsx(style.img)} />
             <p className={clsx(style.name)}>trung bin</p>
             <p className={clsx(style.major)}>web developer</p>
             <FontAwesomeIcon icon={faQuoteLeftAlt} className={clsx(style.quote)} />

@@ -22,13 +22,14 @@
   --color-gmail: #5bb65b;
   --color-home: #a953ae;
   --color-cv: #4ba5cf;
+  --color-quote: rgba(0, 0, 0, .2)
 }
 
-.profile{
+.profile {
   width: 70vw;
   margin: 5rem auto;
   box-shadow: var(--box-shadow);
   border-radius: var(--boder-radius-largest);
   overflow: hidden;
-  
+
 }
