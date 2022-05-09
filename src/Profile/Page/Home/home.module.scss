@@ -1,12 +1,39 @@
+:root {
+  --boder-radius: .25rem;
+  --boder-radius-large: .5rem;
+  --boder-radius-largest: 1rem;
+  --color-description: #8a94a6;
+  --black-color: #000;
+  --white-color: #fff;
+  --primary-color: #4ba7fe;
+  --primary-color-hover: #2d5f8e;
+  --background-button: #f4541d;
+  --background-navbar: #f3eef2;
+  --background-content: #f7f8f9;
+  --background-cv: #d1e6f1;
+  --letter-spacing: .25rem;
+  --box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --dot-one: #ff6058;
+  --dot-two: #fdbe2d;
+  --dot-three: #28c940;
+  --color-facebook: #0284fe;
+  --color-youtube: #da2c2c;
+  --color-github: #8a94a6;
+  --color-instagram: #ff867e;
+  --color-gmail: #5bb65b;
+  --color-home: #a953ae;
+  --color-cv: #4ba5cf;
+  --color-quote: #cdd4d8;
+}
 
-
-.contact{
+.contact {
   width: 90%;
   margin: 1rem auto;
   background-color: var(--background-content);
   border-radius: var(--boder-radius-large);
   user-select: none;
-  .heading{
+
+  .heading {
     text-align: center;
     font-size: 2rem;
     font-weight: 900;
@@ -14,7 +41,68 @@
     text-transform: capitalize;
     padding: 1rem 0;
   }
-  .form{
+
+  .form {
     padding: .5rem 1rem 1rem;
+
+    .project {
+      padding: 1rem 0 2rem;
+
+      .img {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+        border-radius: var(--boder-radius-large);
+        box-shadow: var(--box-shadow);
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .name,
+      .demo,
+      .descript,
+      .note {
+        display: flex;
+        gap: .5rem;
+        font-size: .95rem;
+        color: var(--black-color);
+        font-weight: 900;
+        padding: .25rem 0;
+        line-height: 1.3rem;
+      }
+      .demo{
+        a{
+          color: var(--color-facebook);
+          opacity: .5;
+          &:hover{
+            cursor: pointer;
+            opacity: 1;
+          }
+        }
+      }
+      .descript {
+        ul li::first-letter {
+          text-transform: capitalize;
+        }
+
+        ul li {
+          padding-bottom: .25rem;
+        }
+
+        ul li:last-child {
+          padding-bottom: 0;
+        }
+      }
+
+      .label::first-letter,
+      .des::first-letter {
+        text-transform: capitalize;
+      }
+
+      .des {
+        color: rgba(0, 0, 0, .6);
+      }
+    }
   }
 }
