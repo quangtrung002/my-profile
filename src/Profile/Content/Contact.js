@@ -19,7 +19,7 @@ function Contact() {
       </ul>
       <ul className={clsx(style.list)}>
         <li className={clsx(style.item)}>
-          <a href='https://www.facebook.com/profile.php?id=100011324104921' className={clsx(style.facebook)}><FontAwesomeIcon icon={faFacebookF} /></a>
+          <a href='https://www.facebook.com/chunbin02/' className={clsx(style.facebook)}><FontAwesomeIcon icon={faFacebookF} /></a>
         </li>
         <li className={clsx(style.item)}>
           <a href='https://www.youtube.com/channel/UCOEqMcwNov5s1779JT-QCRA' className={clsx(style.youtube)}><FontAwesomeIcon icon={faYoutube} /></a>
