@@ -31,7 +31,7 @@ function Contact() {
           <a href='https://github.com/quangtrung002' className={clsx(style.github)}><FontAwesomeIcon icon={faGithub} /></a>
         </li>
         <li className={clsx(style.item)}>
-          <a href='https://www.instagram.com/chunbin.02/' className={clsx(style.instagram)}><FontAwesomeIcon icon={faInstagram} /></a>
+          <a href='https://www.instagram.com/dev.nqt/' className={clsx(style.instagram)}><FontAwesomeIcon icon={faInstagram} /></a>
         </li>
       </ul>
     </div>
