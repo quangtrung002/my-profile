@@ -10,14 +10,20 @@ function Infor() {
     <div className={clsx(style.container)}>
       <div className={clsx("grid")}>
         <div className={clsx('row')}>
-          <div className={clsx('col', 'l-7', 'c-12','m-6', style.user)}>
-            <img src={process.env.PUBLIC_URL + "/logo/user.jpg"} className={clsx(style.img)} />
+          <div className={clsx('col', 'l-7', 'c-12', 'm-6', style.user)}>
+            <img src={process.env.PUBLIC_URL + "/logo/user.avif"} className={clsx(style.img)} />
             <p className={clsx(style.name)}>trung bin</p>
             <p className={clsx(style.major)}>web developer</p>
             <FontAwesomeIcon icon={faQuoteLeftAlt} className={clsx(style.quote)} />
-            <p className={clsx(style.des)}>with the knowledge of what's in the school and courses, I've always wanted to become a Web Developer. Having a solid knowledge of HTML, CSS, JAVASCRIPT, REACTJS plus kills I hone every day. I always want to give my best to help the company grow and achieve for myself</p>
+            <p className={clsx(style.des)}>
+              - With the knowledge I have gained from my school education, coupled with six months of practical experience working as a Business Analyst, and the skills I possess, such as self-learning and teamwork abilities, I hope to effectively apply these skills for the benefit of the company and further enhance my work experience.
+              <br></br>
+              - Short-term goal: To develop my work experience.
+              <br></br>
+              - Long-term goal: To strive for a leadership position within the team.
+            </p>
           </div>
-          <div className={clsx('col', 'l-5','c-12','m-6', style.aboutMe)}>
+          <div className={clsx('col', 'l-5', 'c-12', 'm-6', style.aboutMe)}>
             <div className={clsx(style.infors)}>
               <div className={clsx(style.icon)}>
                 <FontAwesomeIcon icon={faCalendarDays} />
@@ -74,19 +80,23 @@ function Infor() {
                   <h1 className={clsx(style.title)}>skill</h1>
                   <p className={clsx(style.frontEnd)}>
                     <span className={clsx(style.heading)}>front end:</span>
-                    <span className={clsx(style.des)}>html, css, js, reactjs</span>
+                    <span className={clsx(style.des)}>html, css(scss), js, ts, reactjs, bootstrap</span>
                   </p>
                   <p className={clsx(style.backEnd)}>
                     <span className={clsx(style.heading)}>back end:</span>
-                    <span className={clsx(style.des)}>C#...</span>
+                    <span className={clsx(style.des)}>nodeJs, nestJs, PHP(basic)</span>
                   </p>
                   <p className={clsx(style.framework)}>
                     <span className={clsx(style.heading)}>framework:</span>
                     <span className={clsx(style.des)}>reactjs, bootstrap</span>
                   </p>
+                  <p className={clsx(style.sourceCode)}>
+                    <span className={clsx(style.heading)}>source code manager:</span>
+                    <span className={clsx(style.des)}>git, gitHub, fileZilla</span>
+                  </p>
                   <p className={clsx(style.data)}>
                     <span className={clsx(style.heading)}>data:</span>
-                    <span className={clsx(style.des)}>sql server</span>
+                    <span className={clsx(style.des)}>mySQL, typeORM, mongoDB</span>
                   </p>
                 </div>
               </div>

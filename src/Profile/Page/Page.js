@@ -6,7 +6,7 @@ import Infor from './Information/Infor'
 function Page() {
   return (
     <Routes>
-      <Route path='/' element={<Home />}></Route>
+      {/* <Route path='/' element={<Home />}></Route> */}
       <Route path="/cv" element={<Infor />}></Route>
     </Routes>
   )
